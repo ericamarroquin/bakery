@@ -11,7 +11,14 @@ namespace Bakery.Models
 
     public int Cost()
     {
-      
+      if (Quantity % 3 == 0)
+      {
+        return (Quantity * 5) - ((Quantity / 3) * 5);
+      }
+      else
+      {
+        return Quantity * 5;
+      }
     }
   }
 }

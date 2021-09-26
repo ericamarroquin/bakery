@@ -41,6 +41,15 @@ namespace Bakery.Models.Tests
       int cost = 10;
       Assert.AreEqual(cost, resultCost);
     }
+
+    [TestMethod]
+    public void Cost_ReturnTotalCostOfFourBread_Int()
+    {
+      Bread newBread = new Bread(4);
+      int resultCost = newBread.Cost();
+      int cost = 20;
+      Assert.AreEqual(cost, resultCost);
+    }
   }
 
   // [TestClass]
