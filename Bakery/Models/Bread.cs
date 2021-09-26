@@ -8,5 +8,10 @@ namespace Bakery.Models
     {
       Quantity = quantity;
     }
+
+    public int Cost()
+    {
+      
+    }
   }
 }
