@@ -61,5 +61,14 @@ namespace Bakery.Models.Tests
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+
+    [TestMethod]
+    public void GetQuantity_ReturnsPastryQuantity_Int()
+    {
+      Pastry newPastry = new Pastry(1);
+      int quantity = 1;
+      int result = newPastry.Quantity;
+      Assert.AreEqual(quantity, result);
+    }
   }
 }
