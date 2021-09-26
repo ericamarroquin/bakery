@@ -9,13 +9,17 @@ namespace Bakery.Models.Tests
   public class BreadTests
   {
     [TestMethod]
-
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
   }
 
-  [TestClass]
-  public class PastryTests
-  {
-    [TestMethod]
-    
-  }
+  // [TestClass]
+  // public class PastryTests
+  // {
+  //   [TestMethod]
+
+  // }
 }
