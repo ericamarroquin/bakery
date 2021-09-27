@@ -4,9 +4,9 @@ namespace Bakery.Models
   {
     public int Quantity { get; set; }
 
-    public Bread(int quantity)
+    public Pastry(int quantity)
     {
-      // Quantity = quantity;
+      Quantity = quantity;
     }
   }
 }
