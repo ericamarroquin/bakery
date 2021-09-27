@@ -16,7 +16,7 @@ This console app will take an 'order' from the user, asking the quantity of brea
 
 ## Setup/Installation Requirements
 
-* .NET 5.0 is required for this project
+* [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.401-macos-x64-installer) must be installed for this project
 * Clone this repository to desired location using `git clone` command
 * To test, navigate to Bakery.Solution/Bakery.Tests
 * * Run the command `dotnet restore`
