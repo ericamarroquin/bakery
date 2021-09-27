@@ -71,11 +71,21 @@ namespace Bakery.Models.Tests
       Assert.AreEqual(quantity, result);
     }
 
+    [TestMethod]
     public void Cost_ReturnTotalCostOfOnePastry_Int()
     {
       Pastry newPastry = new Pastry(1);
       int resultCost = newPastry.Cost();
       int cost = 2;
+      Assert.AreEqual(cost, resultCost);
+    }
+
+    [TestMethod]
+    public void Cost_ReturnTotalCostOfThreePastry_Int()
+    {
+      Pastry newPastry = new Pastry(3);
+      int resultCost = newPastry.Cost();
+      int cost = 5;
       Assert.AreEqual(cost, resultCost);
     }
   }
