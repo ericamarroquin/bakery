@@ -11,7 +11,7 @@ namespace Bakery.Models
 
     public int Cost()
     {
-      // return Quantity * 2;
+      return Quantity * 2;
     }
   }
 }
