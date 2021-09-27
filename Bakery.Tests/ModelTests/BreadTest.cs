@@ -70,5 +70,13 @@ namespace Bakery.Models.Tests
       int result = newPastry.Quantity;
       Assert.AreEqual(quantity, result);
     }
+
+    public void Cost_ReturnTotalCostOfOnePastry_Int()
+    {
+      Pastry newPastry = new Pastry(1);
+      int resultCost = newPastry.Cost();
+      int cost = 2;
+      Assert.AreEqual(cost, resultCost);
+    }
   }
 }
