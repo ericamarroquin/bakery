@@ -9,12 +9,11 @@ namespace Bakery.Models
       Quantity = quantity;
     }
 
-    public int Cost()
+    public int Cost() // 6
     {
-      // int quantityDivisibleByTwo = Quantity % 3;
-      // int quantityDivisibleByThree = (Quantity - quantityDivisibleByTwo) / 3;
-      // return (quantityDivisibleByTwo * 2) + (quantityDivisibleByThree * 5);
-      return Quantity * 2;
+      int quantityDivisibleByTwo = Quantity % 3; // 0 
+      int quantityDivisibleByThree = (Quantity - quantityDivisibleByTwo) / 3; // (6 - 0) / 3 = 6 / 3 = 2
+      return (quantityDivisibleByTwo * 2) + (quantityDivisibleByThree * 5); // (0*2)+(2*5) = 0+10 = 10
     }
   }
 }
