@@ -23,6 +23,16 @@ namespace Bakery
       int totalCost = loavesOfBread.Cost() + numberOfPastries.Cost();
 
       Console.WriteLine("Thank you! Your total cost today is $" + totalCost + ".");
+      Console.WriteLine("Would you like to make another purchase? Yes to continue, anything else to quit.");
+      string continueOrder = Console.ReadLine();
+      if (continueOrder.ToLower() == "yes")
+      {
+        Main();
+      }
+      else
+      {
+        Console.WriteLine("Goodbye!");
+      }
     }
   }
 }

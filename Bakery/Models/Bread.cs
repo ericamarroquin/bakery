@@ -11,9 +11,9 @@ namespace Bakery.Models
 
     public int Cost()
     {
-      if (Quantity % 3 == 0)
+      if (Quantity >= 3)
       {
-        return (Quantity * 5) - ((Quantity / 3) * 5);
+        return (Quantity * 5) - (((Quantity - (Quantity % 3)) / 3) * 5);
       }
       else
       {
